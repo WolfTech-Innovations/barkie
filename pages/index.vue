@@ -21,11 +21,15 @@
         />
         <app-form-hr />
         <app-form-links v-model="data.ls" />
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
+import { ref } from "vue";
 import { encodeData } from "../utils/transformer";
+
 const data = ref({
   n: "",
   d: "",
