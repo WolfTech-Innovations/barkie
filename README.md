@@ -1,5 +1,7 @@
 # Barkie - Bark your bio
 
+## Based on [Onelink](https://github.com/fayazara/onelink)
+
 ## Setup locally
 
 Make sure to install the dependencies:
