@@ -124,7 +124,7 @@ const removeLink = (link) => {
 }
 .ghost {
   opacity: 0.5;
-  background: #c8ebfb;
+  background:rgb(117, 60, 207);
 }
 .list-group {
   min-height: 20px;

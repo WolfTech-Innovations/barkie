@@ -1,7 +1,7 @@
 <template>
   <base-form-section
     title="Social Links"
-    description="Add some social media links"
+    description="Add some social media links!"
   >
     <div class="shadow sm:overflow-hidden sm:rounded-md">
       <div class="grid grid-cols-2 gap-8 bg-white px-4 py-5 sm:p-6">
@@ -22,7 +22,7 @@
               :value="facebook"
               @input="$emit('update:facebook', $event.target.value)"
               class="block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-              placeholder="https://fb.com/elonmusk"
+              placeholder="https://facebook.com/FunnyGuy"
             />
           </div>
         </div>
@@ -43,7 +43,7 @@
               :value="twitter"
               @input="$emit('update:twitter', $event.target.value)"
               class="block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-              placeholder="https://twitter.com/elonmusk"
+              placeholder="https://twitter.com/FunnyGuy"
             />
           </div>
         </div>
@@ -64,7 +64,7 @@
               :value="instagram"
               @input="$emit('update:instagram', $event.target.value)"
               class="block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-              placeholder="https://instagram.com/elonmusk"
+              placeholder="https://instagram.com/FunnyGuy"
             />
           </div>
         </div>
@@ -85,7 +85,7 @@
               :value="github"
               @input="$emit('update:github', $event.target.value)"
               class="block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-              placeholder="https://github.com/elonmusk"
+              placeholder="https://github.com/FunnyGuy"
             />
           </div>
         </div>
@@ -106,7 +106,7 @@
               :value="telegram"
               @input="$emit('update:telegram', $event.target.value)"
               class="block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-              placeholder="https://t.me/elonmusk"
+              placeholder="https://t.me/FunnyGuy"
             />
           </div>
         </div>
@@ -127,7 +127,7 @@
               :value="linkedin"
               @input="$emit('update:linkedin', $event.target.value)"
               class="block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-              placeholder="https://linkedin.com/elonmusk"
+              placeholder="https://linkedin.com/FunnyGuy"
             />
           </div>
         </div>
@@ -148,7 +148,7 @@
               :value="email"
               @input="$emit('update:email', $event.target.value)"
               class="block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-              placeholder="elonmusk@geemail.com"
+              placeholder="FunnyGuy@geemail.com"
             />
           </div>
         </div>
@@ -169,7 +169,7 @@
               :value="youtube"
               @input="$emit('update:youtube', $event.target.value)"
               class="block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-              placeholder="https://youtube.com/elonmusk"
+              placeholder="https://youtube.com/FunnyGuy"
             />
           </div>
         </div>
@@ -190,7 +190,7 @@
               :value="whatsapp"
               @input="$emit('update:whatsapp', $event.target.value)"
               class="block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-              placeholder="+9190000000000"
+              placeholder="(248)434-5508 | Call for a suprise"
             />
           </div>
         </div>
