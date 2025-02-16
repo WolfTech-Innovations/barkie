@@ -39,6 +39,4 @@
       </div>
     </div>
   </div>
-<script type="text/javascript" src="js/materialize.min.js"></script>
-<style src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.2.0/dist/css/materialize.min.css"></style>
 </template>
