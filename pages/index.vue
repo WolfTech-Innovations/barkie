@@ -1,6 +1,6 @@
 <template>
-  <div class="h-screen grid grid-cols-1 md:grid-cols-3 divide-x theme-custom">
-    <div class="col-span-1 md:col-span-2 h-screen flex flex-col bg-slate-100">
+  <div class="h-screen grid grid-cols-3 divide-x theme-custom">
+    <div class="col-span-2 h-screen flex flex-col bg-slate-100">
       <!-- Centered Branding Header -->
       <div class="py-6 bg-white shadow-md text-center">
         <h1 class="text-4xl font-extrabold text-slate-900">Barkie</h1>
@@ -40,3 +40,71 @@
     </div>
   </div>
 </template>
+
+<style>
+.theme-custom {
+    /* Name: custom color palette
+       Author: Ilias Ism
+       URL: https://gradient.page */
+
+    /* CSS: .bg-gradient { background: var(--gradient) } */
+    --gradient: linear-gradient(to top left,#6441A5,#2a0845);
+
+    --background: 277 28.6% 3.6%;
+    --foreground: 277 4.4% 97.25%;
+
+    --muted: 277 22% 13.5%;
+    --muted-foreground: 277 4.4% 54.5%;
+
+    --popover: 277 56.2% 5.8500000000000005%;
+    --popover-foreground: 277 4.4% 97.25%;
+
+    --card: 277 56.2% 5.8500000000000005%;
+    --card-foreground: 277 4.4% 97.25%;
+
+    --border: 277 22% 13.5%;
+    --input: 277 22% 13.5%;
+
+    --primary: 277 44% 45%;
+    --primary-foreground: 277 4.4% 97.25%;
+
+    --secondary: 277 22% 13.5%;
+    --secondary-foreground: 277 4.4% 97.25%;
+
+    --accent: 277 22% 13.5%;
+    --accent-foreground: 277 4.4% 97.25%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 277 4.4% 97.25%;
+
+    --ring: 277 44% 45%;
+}
+</style>
+
+<script setup>
+import { ref } from "vue";
+import { encodeData } from "../utils/transformer";
+
+const data = ref({
+  n: "",
+  d: "",
+  i: "",
+  f: "",
+  t: "",
+  ig: "",
+  gh: "",
+  tg: "",
+  l: "",
+  e: "",
+  w: "",
+  y: "",
+  ls: [],
+});
+
+const publish = () => {
+  const url = `${window.location.origin}/1?data=${encodeData(data.value)}`;
+  navigator.clipboard.writeText(url).then(() => {
+    alert("Link copied to clipboard");
+  });
+};
+</script>
