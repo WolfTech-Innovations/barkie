@@ -91,4 +91,3 @@ footer {
   font-size: 14px;
 }
 </style>
-<style src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.2.0/dist/css/materialize.min.css"></style>
