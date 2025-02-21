@@ -108,3 +108,20 @@ const publish = () => {
   });
 };
 </script>
+<script>
+export default {
+  mounted() {
+    // Dynamically add the AdSense script for Auto Ads
+    const script = document.createElement("script");
+    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8933145913893262";
+    script.async = true;
+    script.crossOrigin = "anonymous";
+    document.head.appendChild(script);
+
+    // Optional: Initialize Auto Ads (Google handles this automatically, but this is for completion)
+    script.onload = () => {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    };
+  }
+};
+</script>
